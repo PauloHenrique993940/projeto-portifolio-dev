@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --branco: #f4f4f4;
+    --preto: #0d0d0d;
+    --bg-color1: #1e2a38;
+    /* azul petróleo escuro */
+    --bg-color2: #0c111b;
+    /* quase preto, azulado */
+    --container-bg-color: #1e1f24;
+    --header-color1: #323b45;
+    --header-color2: #101623;
+    --banner-shadow-color: #323b45;
+    --banner-shadow-color2: #323b45;
+    --box-background-color: #121212;
+    --body-bg-color:  #0D1117;
+    --bar-color1: #ffae00;
+    --bar-color3: #787f94;
+}
+
+* {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color1);
+    background: linear-gradient(180deg, var(--bg-color1) 0%, var(--bg-color2) 100%);
+    color: var(--branco);
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 2px;
+}
+
+#container {
+    background-color: var(--body-bg-color);
+    max-width: 1280px;
+    width: 100%;
+    margin: 60px auto;
+    min-height: calc(100vh - 100px);
+    flex-grow: 1;
+    box-shadow: -10px 10px 40px var(--preto);
+
+}
+
+.logo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #4F46E5;
+    /* Roxo elegante */
+    background: linear-gradient(90deg, #4F46E5, #9333EA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+header {
+    background-color: var(--bg-color1);
+    background: linear-gradient(180deg, var(--header-color1) 0%, var(--header-color2) 100%);
+
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav>span {
+    align-self: flex-start;
+    margin: 10px 3vw;
+}
+
+nav>ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 7vw;
+}
+
+nav>ul>li {
+    text-decoration: none;
+    display: inline;
+}
+
+a {
+    color: var(--branco);
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover {
+    color: #7B61FF;
+    /* Roxo suave que combina com a logo */
+    border-bottom: 2px solid #7B61FF;
+}
+
+#banner {
+    height: 600px;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-image: url("../images/perfil1-removebg-preview.png");
+    /* Combina a imagem e o gradiente */
+}
+
+
+#banner-shadow {
+    height: 100%;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(24, 23, 23, 0.3);
+    /* Deslocamento X, Deslocamento Y, Desfoque, Cor */
+}
+
+#banner h1 {
+    position: relative;
+    font-family: sans-serif;
+    font-size: 3em;
+    color: var(--branco);
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-shadow: 10px 10px 10px var(--box-background-color);
+    /* Sombra simples */
+    text-transform: uppercase;
+    top: -180px;
+    left: 40px;
+}
+
+#infos {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sobre {
+    flex: 1;
+}
+
+div.title {
+    background-color: var(--box-background-color);
+    background: linear-gradient(to bottom, var(--bg-color1), var(--body-bg-color));
+    font-size: 36px;
+    /* Adicione outras propriedades de estilo conforme necessário */
+    color: var(--branco);
+    /* Exemplo: define a cor do texto para branco */
+    padding: 10px;
+    /* Exemplo: adiciona um pouco de preenchimento ao redor do texto */
+    border-radius: 5px;
+    /* Exemplo: arredonda as bordas */
+    padding: 10px 30px;
+    margin: 0 0 20px 0;
+
+}
+
+#sobre p {
+    margin: 20px;
+}
+
+p {
+    font-size: 20px;
+    font-weight: lighter;
+    font-weight: 100;
+
+}
+
+#social {
+    display: flex;
+}
+
+#social img {
+    /* Use a classe em vez do seletor por ID */
+    width: 50px;
+    padding: 10px 0 0 30px;
+    transition: width 100ms;
+    /* Você provavelmente queria transition na height, não width */
+}
+
+#social img:hover {
+    width: 55px;
+}
+
+#habilidades {
+    flex: 1;
+    margin-right: 30px;
+    margin-top: -180px;
+    z-index: 1;
+
+
+}
+
+#resumo {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--box-background-color);
+    background: linear-gradient(to bottom, var(--bg-color1), var(--body-bg-color));
+    /* azul escuro + cinza */
+}
+
+#botao-contato {
+    color: #00BFFF;
+    /* cor do texto */
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 2px solid #00BFFF;
+    border-radius: 8px;
+    transition: background 0.3s, color 0.3s;
+    text-transform: uppercase;
+}
+
+#botao-contato:hover {
+    background-color: #00BFFF;
+    color: #000;
+    /* texto preto no hover */
+}
+
+h3{
+    font-size: 36px;
+}
+
+#resumo h3{
+    margin-top: 0;
+    padding: 0;
+}
+
+#habilidades > h3{
+    padding-left: 20px;
+}
+
+.tecnologias{
+    margin: 20px 0;
+    border: 2px solid #00BFFF;
+    background: linear-gradient(to bottom, var(--bg-color1), var(--body-bg-color));
+    border-radius: 10px;
+    justify-content: stretch;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease; /* efeito suave */
+}
+.tecnologias > div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+} 
+.tecnologias:hover {
+    background: transparent; /* cor quando passa o mouse */
+}
+.tecnologias img{
+    width: 50px;
+    height: 50px;
+}
+
+
+
+.tecnologias > div > span{
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
+
+.bar  div{
+    height: 20px;
+    background-image: linear-gradient(to right, orange 80%, transparent 80%);
+    background-color: var(--bar-color3);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#div1{
+    height: 20px;
+    background-image: linear-gradient(to right, blue 90%, transparent 80%);
+    background-color: var(--bar-color3);
+    border-radius: 10px;
+}
+#div2{
+    height: 20px;
+    background-image: linear-gradient(to right, yellow 95%, transparent 80%);
+    background-color: var(--bar-color3);
+    border-radius: 10px;
+}
+#div3{
+    height: 20px;
+    background-image: linear-gradient(to right, red 88%, transparent 80%);
+    background-color: var(--bar-color3);
+    border-radius: 10px;
+}
+#div4{
+    height: 20px;
+    background-image: linear-gradient(to right, purple 77%, transparent 80%);
+    background-color: var(--bar-color3);
+    border-radius: 10px;
+}
+#div5{
+    height: 20px;
+    background-image: linear-gradient(to right, green 70%, transparent 80%);
+    background-color: var(--bar-color3);
+    border-radius: 10px;
+}
+#div6{
+    height: 20px;
+    background-image: linear-gradient(to right, blue 60%, transparent 80%);
+    background-color: var(--bar-color3);
+    border-radius: 10px;
+}
+
+#div7{
+    height: 20px;
+    background-image: linear-gradient(to right, blue 71%, transparent 80%);
+    background-color: var(--bar-color3);
+    border-radius: 10px;
+}
+
+#div8{
+    height: 20px;
+    background-image: linear-gradient(to right, green 50%, transparent 80%);
+    background-color: var(--bar-color3);
+    border-radius: 10px;
+}
+#div9{
+    height: 20px;
+    background-image: linear-gradient(to right, purple 100%, transparent 80%);
+    background-color: var(--bar-color3);
+    border-radius: 10px;
+}
