@@ -1,0 +1,210 @@
+/* public/css/light-theme.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+:root {
+    --branco: #0d0d0d; /* Preto para o texto */
+    --preto: #f4f4f4; /* Branco para o fundo principal */
+    --bg-color1: #e0e0e0; /* Cinza claro */
+    --bg-color2: #f5f5f5; /* Branco suave */
+    --container-bg-color: #ffffff; /* Branco para o container */
+    --header-color1: #d4d4d4; /* Cinza mais claro para o topo do header */
+    --header-color2: #e0e0e0; /* Cinza claro para a parte inferior do header */
+    --banner-shadow-color: #a3a3a3; /* Cinza para a sombra do banner */
+    --banner-shadow-color2: #a3a3a3;
+    --box-background-color: #f9f9f9; /* Branco acinzentado para as caixas */
+    --body-bg-color: #ffffff; /* Branco para o fundo do container */
+    --bar-color1: #ffc107; /* Amarelo mais claro */
+    --bar-color3: #dcdcdc; /* Cinza bem claro para o fundo da barra */
+}
+
+body {
+    background-color: var(--bg-color1);
+    background: linear-gradient(180deg, var(--bg-color1) 0%, var(--bg-color2) 100%);
+    color: var(--branco);
+}
+
+#container {
+    background-color: var(--body-bg-color);
+    box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.2); /* Sombra mais clara */
+}
+
+header {
+    background-color: var(--bg-color1);
+    background: linear-gradient(180deg, var(--header-color1) 0%, var(--header-color2) 100%);
+}
+
+nav a {
+    color: var(--branco);
+}
+
+nav ul li a:hover {
+    color: #673ab7; /* Roxo mais claro */
+    border-bottom: 2px solid #673ab7;
+}
+
+#banner h1 {
+    color: var(--branco);
+    text-shadow: 5px 5px 5px var(--box-background-color); /* Sombra mais suave */
+}
+
+div.title {
+    background-color: var(--box-background-color);
+    background: linear-gradient(to bottom, var(--bg-color1), var(--body-bg-color));
+    color: var(--branco);
+}
+
+#resumo {
+    background-color: var(--box-background-color);
+    background: linear-gradient(to bottom, var(--bg-color1), var(--body-bg-color));
+}
+
+.tecnologias {
+    border: 2px solid #673ab7; /* Roxo mais claro */
+    background: linear-gradient(to bottom, var(--bg-color1), var(--body-bg-color));
+}
+
+.tecnologias:hover {
+    background: transparent;
+}
+
+.tecnologias>div>span {
+    color: var(--branco);
+}
+
+.bar div {
+    background-image: linear-gradient(to right, #ffc107 85%, transparent 80%);
+    background-color: var(--bar-color3);
+}
+
+/* Adapte as cores das barras de habilidade para o tema claro, se necessário */
+#div1 {
+    background-image: linear-gradient(to right, #3f51b5 100%, transparent 80%);
+    background-color: var(--bar-color3);
+}
+
+#div2 {
+    background-image: linear-gradient(to right, #ffeb3b 100%, transparent 80%);
+    background-color: var(--bar-color3);
+}
+
+#div3 {
+    background-image: linear-gradient(to right, #f44336 100%, transparent 80%);
+    background-color: var(--bar-color3);
+}
+
+#div4 {
+    background-image: linear-gradient(to right, #9c27b0 100%, transparent 80%);
+    background-color: var(--bar-color3);
+}
+
+#div5 {
+    background-image: linear-gradient(to right, #4caf50 100%, transparent 80%);
+    background-color: var(--bar-color3);
+}
+
+#div6 {
+    background-image: linear-gradient(to right, #2196f3 100%, transparent 80%);
+    background-color: var(--bar-color3);
+}
+
+#div7 {
+    background-image: linear-gradient(to right, #03a9f4 100%, transparent 80%);
+    background-color: var(--bar-color3);
+}
+
+#div8 {
+    background-image: linear-gradient(to right, #8bc34a 100%, transparent 70%);
+    background-color: var(--bar-color3);
+}
+
+#div9 {
+    background-image: linear-gradient(to right, #673ab7 100%, transparent 80%);
+    background-color: var(--bar-color3);
+}
+
+#container_formulario {
+    background-color: var(--box-background-color);
+}
+
+#enviar_mensagem {
+    border: 2px solid #673ab7;
+    background-color: var(--body-bg-color);
+    color: var(--branco);
+}
+
+#enviar_mensagem:hover {
+    background-color: #e0e0e0;
+    color: #673ab7;
+}
+
+/* Estilo do switch do tema (já presente no seu HTML) */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #673ab7;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #673ab7;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Estilos específicos para o tema claro, se necessário */
+#header {
+    /* Exemplo de ajuste no header para o tema claro */
+    background-color: var(--header-color1);
+}
+
+.menu-list a {
+    color: var(--branco); /* Garante que os links do menu sejam legíveis */
+}
+
+/* Adicione outros estilos conforme necessário para o tema claro */
