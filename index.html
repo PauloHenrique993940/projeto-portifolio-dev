@@ -8,14 +8,14 @@
     <link rel="icon" href="public/images/logo-refatorando.png" type="image/x-icon">
     <link rel="stylesheet" href="public/css/styles.css">
     <link rel="stylesheet" href="public/css/light.css" id="theme-link">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
     <div id="container">
         <header id="header">
             <nav>
-                <span class="logo">PH</span>
-                <ul class="menu-list">
+                <span class="logo" data-aos="fade-right">PH</span> <ul class="menu-list">
                     <li>
                         <a href="#">HOME</a>
                     </li>
@@ -45,11 +45,9 @@
         <div id="banner">
             <div id="banner-shadow">
             </div>
-            <h1>Paulo Henrique</h1>
-        </div>
+            <h1 data-aos="fade-up" data-aos-duration="1000">Paulo Henrique</h1> </div>
         <div id="infos">
-            <div id="sobre">
-                <div class="title">
+            <div id="sobre" data-aos="fade-up"> <div class="title">
                     Sobre Min
                 </div>
                 <p>Desenvolvedor Front-End com formação em Análise e Desenvolvimento de Sistemas.</p>
@@ -59,22 +57,21 @@
                     performance, acessibilidade e boas práticas de UI/UX. Adaptável a diferentes stacks (Vue, Bootstrap,
                     Styled Components). Perfil analítico, comunicativo e com boa gestão de tempo.</p>
                 <div id="social">
-                    <a href="https://github.com/PauloHenrique993940"><img src="/public/images/icon-git.png"
+                    <a href="https://github.com/PauloHenrique993940" data-aos="fade-right" data-aos-delay="200"><img src="/public/images/icon-git.png"
                             alt="Icobe Git hub"></a>
-                    <a href="https://www.linkedin.com/in/paulohenriquefranca/"><img
+                    <a href="https://www.linkedin.com/in/paulohenriquefranca/" data-aos="fade-left" data-aos-delay="400"><img
                             src="/public/images/icon-linkedin.png" alt="Icone linkedin"></a>
 
                 </div>
             </div>
             <div id="habilidades">
-                <div id="resumo">
-                    <h3>Desenvolvedor Web | Front-End</h3>
+                <div id="resumo" data-aos="fade-right"> <h3>Desenvolvedor Web | Front-End</h3>
                     <p>Com expertise em Front-End, proporciono soluções web inovadoras com interfaces intuitivas e
                         responsivas.</p>
                     <a href="#Contato" id="botao-contato">Entrar em Contato</a>
                 </div>
                 <h3>Habilidades</h3>
-                <div class="tecnologias">
+                <div class="tecnologias" data-aos="fade-right">
                     <img src="./public/images/icon-html5.png" alt="Icone Html5">
                     <div>
                         <div class="bar">
@@ -86,7 +83,7 @@
 
 
                 </div>
-                <div class="tecnologias">
+                <div class="tecnologias" data-aos="fade-right" data-aos-delay="100">
                     <img src="./public/images/icon-css3.png" alt="Icone Html5">
                     <div>
                         <div class="bar">
@@ -98,7 +95,7 @@
 
 
                 </div>
-                <div class="tecnologias">
+                <div class="tecnologias" data-aos="fade-right" data-aos-delay="200">
                     <img src="./public/images/icon-javascript.png" alt="Icone Html5">
                     <div>
                         <div class="bar">
@@ -110,7 +107,7 @@
 
 
                 </div>
-                <div class="tecnologias">
+                <div class="tecnologias" data-aos="fade-right" data-aos-delay="300">
                     <img src="./public/images/icon-git.png" alt="Icone Git">
                     <div>
                         <div class="bar">
@@ -122,7 +119,7 @@
 
 
                 </div>
-                <div class="tecnologias">
+                <div class="tecnologias" data-aos="fade-right" data-aos-delay="400">
                     <img src="./public/images/icon-github.png" alt="Icone git hub">
                     <div>
                         <div class="bar">
@@ -134,7 +131,7 @@
 
 
                 </div>
-                <div class="tecnologias">
+                <div class="tecnologias" data-aos="fade-right" data-aos-delay="500">
                     <img src="./public/images/icon-node.png" alt="Icone node">
                     <div>
                         <div class="bar">
@@ -146,7 +143,7 @@
 
 
                 </div>
-                <div class="tecnologias">
+                <div class="tecnologias" data-aos="fade-right" data-aos-delay="600">
                     <img src="./public/images/icon-tailwind.png" alt="Icone TAILWIND">
                     <div>
                         <div class="bar">
@@ -158,7 +155,7 @@
 
 
                 </div>
-                <div class="tecnologias">
+                <div class="tecnologias" data-aos="fade-right" data-aos-delay="700">
                     <img src="./public/images/React-icon.svg.png" alt="Icone React">
                     <div>
                         <div class="bar">
@@ -170,7 +167,7 @@
 
 
                 </div>
-                <div class="tecnologias">
+                <div class="tecnologias" data-aos="fade-right" data-aos-delay="800">
                     <img src="./public/images/Vue.js_Logo_2.svg.png" alt="Icone Vue">
                     <div>
                         <div class="bar">
@@ -182,7 +179,7 @@
 
 
                 </div>
-                <div class="tecnologias">
+                <div class="tecnologias" data-aos="fade-right" data-aos-delay="900">
                     <img src="./public/images/bootstrap.png" alt="Icone bootstrap">
                     <div>
                         <div class="bar">
@@ -194,71 +191,73 @@
             </div>
         </div>
         <div id="projetos">
-            <div class="title">
+            <div class="title" data-aos="fade-up">
                 Ecomerce
             </div>
             <div id="galeria-projetos">
-                <a href="#"><img src="./public/images/projetos-ecommerce.png" alt="projeto login"></a>
-                <a href="https://efood-seven-azure.vercel.app/"><img src="./public/images/projetos/efood.png" alt="projeto todo list"></a>
-                <a href="https://eplay-one.vercel.app/"><img src="./public/images/projetos/eplay.png" alt="projeto prataforma"></a>
+                <a href="#" data-aos="zoom-in"><img src="./public/images/projetos-ecommerce.png" alt="projeto login"></a>
+                <a href="https://efood-seven-azure.vercel.app/" data-aos="zoom-in" data-aos-delay="100"><img src="./public/images/projetos/efood.png" alt="projeto todo list"></a>
+                <a href="https://eplay-one.vercel.app/" data-aos="zoom-in" data-aos-delay="200"><img src="./public/images/projetos/eplay.png" alt="projeto prataforma"></a>
             </div>
         </div>
         <div id="projetos">
-            <div class="title">
+            <div class="title" data-aos="fade-up">
                 Telas de Login
             </div>
             <div id="galeria-projetos">
-                <a href="#"><img src="./public/images/projetos-login.png" alt="projeto login"></a>
+                <a href="#" data-aos="zoom-in"><img src="./public/images/projetos-login.png" alt="projeto login"></a>
             </div>
         </div>
         <div id="projetos">
-            <div class="title">
+            <div class="title" data-aos="fade-up">
                 Sites | Landing Page
             </div>
             <div id="galeria-projetos">
-                <a href="https://pousada-pi.vercel.app/"><img src="./public/images/projetos/pousada.png" alt="projeto Pousda"></a>
-                <a href="https://webpagfim.vercel.app/"><img src="./public/images/projetos/site.png" alt="projeto site"></a>
-                <a href="https://clone-disneyplus-woad.vercel.app/"><img src="./public/images/projetos/disney.png" alt="projeto site Disney +"></a>
-                <a href="https://restaurante-peach-alpha.vercel.app/"><img src="./public/images/projetos/restaurant.png" alt="projeto ecomerce"></a>
+                <a href="https://pousada-pi.vercel.app/" data-aos="zoom-in"><img src="./public/images/projetos/pousada.png" alt="projeto Pousda"></a>
+                <a href="https://webpagfim.vercel.app/" data-aos="zoom-in" data-aos-delay="100"><img src="./public/images/projetos/site.png" alt="projeto site"></a>
+                <a href="https://clone-disneyplus-woad.vercel.app/" data-aos="zoom-in" data-aos-delay="200"><img src="./public/images/projetos/disney.png" alt="projeto site Disney +"></a>
+                <a href="https://restaurante-peach-alpha.vercel.app/" data-aos="zoom-in" data-aos-delay="300"><img src="./public/images/projetos/restaurant.png" alt="projeto ecomerce"></a>
             </div>
         </div>
         <div id="projetos">
-            <div class="title">
+            <div class="title" data-aos="fade-up">
                 Aplicações
             </div>
             <div id="galeria-projetos">
-                <a href="#"><img src="./public/images/projetos/aplicacao.png" alt="projeto  aplicacao"></a>
-                <a href="#"><img src="./public/images/projetos/listaTarefa.png" alt="projeto todo list"></a>
-                <a href="#"><img src="./public/images/projetos-nft.png" alt="projeto prataforma"></a>
-                <a href="#"><img src="./public/images/projetos-nft.png" alt="projeto ecomerce"></a>
-                <a href="#"><img src="./public/images/projetos-agendamento.png" alt="projeto ntf"></a>
-                <a href="#"><img src="./public/images/projetos-plataforma.png"
+                <a href="#" data-aos="zoom-in"><img src="./public/images/projetos/aplicacao.png" alt="projeto  aplicacao"></a>
+                <a href="#" data-aos="zoom-in" data-aos-delay="100"><img src="./public/images/projetos/listaTarefa.png" alt="projeto todo list"></a>
+                <a href="#" data-aos="zoom-in" data-aos-delay="200"><img src="./public/images/projetos-nft.png" alt="projeto prataforma"></a>
+                <a href="#" data-aos="zoom-in" data-aos-delay="300"><img src="./public/images/projetos-nft.png" alt="projeto ecomerce"></a>
+                <a href="#" data-aos="zoom-in" data-aos-delay="400"><img src="./public/images/projetos-agendamento.png" alt="projeto ntf"></a>
+                <a href="#" data-aos="zoom-in" data-aos-delay="500"><img src="./public/images/projetos-plataforma.png"
                         alt="projeto agendamento de mentoria"></a>
-                <a href="#"><img src="./public/images/projetos-todo-List.png" alt="projeto agendamento de mentoria"></a>
+                <a href="#" data-aos="zoom-in" data-aos-delay="600"><img src="./public/images/projetos-todo-List.png" alt="projeto agendamento de mentoria"></a>
             </div>
         </div>
-        <div id="contato">
+        <div id="contato" data-aos="fade-up">
             <div class="title">
                 Contato
             </div>
             <div id="container_formulario">
                 <h4>Enviar Mensagem:</h4>
                 <form action="#">
-                    <input type="text" placeholder="Nome*" />
-                    <input type="text" placeholder="Número do celular" />
-                    <input type="text" placeholder="E-mail" />
-                    <textarea placeholder="Mensagem*"></textarea>
+                    <input type="text" placeholder="Nome*" data-aos="fade-right"/>
+                    <input type="text" placeholder="Número do celular" data-aos="fade-right" data-aos-delay="100"/>
+                    <input type="text" placeholder="E-mail" data-aos="fade-right" data-aos-delay="200"/>
+                    <textarea placeholder="Mensagem*" data-aos="fade-right" data-aos-delay="300"></textarea>
 
                     <div>
-                        <input id="enviar_mensagem" type="submit" value="Enviar Mensagem " />
+                        <input id="enviar_mensagem" type="submit" value="Enviar Mensagem " data-aos="zoom-in" data-aos-delay="400"/>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 
-
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Inicialize o AOS
+    </script>
     <script src="./public/js/main.js"></script>
 
 </body>
